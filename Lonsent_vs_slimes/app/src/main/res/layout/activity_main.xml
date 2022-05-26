@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/boost"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:text="BOOST"
+        app:icon="@android:drawable/btn_star_big_on"
+        app:layout_constraintBottom_toBottomOf="@+id/downButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/downButton"
+        tools:ignore="MissingConstraints"
+        tools:layout_conversion_absoluteHeight="20dp"
+        tools:layout_conversion_absoluteWidth="88dp"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/attack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="Attack"
+        app:icon="@android:drawable/btn_dialog"
+        app:layout_constraintBottom_toTopOf="@+id/boost"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_conversion_absoluteHeight="20dp"
+        tools:layout_conversion_absoluteWidth="88dp"
+
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/leftButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="50"
+        android:background="@android:color/black"
+        android:gravity="bottom"
+        android:text="l"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/downButton"
+        app:layout_constraintEnd_toStartOf="@+id/upButton"
+        app:layout_constraintTop_toBottomOf="@+id/upButton" />
+
+    <Button
+        android:id="@+id/rightButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="50"
+        android:background="@color/black"
+        android:gravity="bottom"
+        android:text="r"
+        app:layout_constraintBottom_toTopOf="@+id/downButton"
+        app:layout_constraintStart_toEndOf="@+id/upButton"
+        app:layout_constraintTop_toBottomOf="@+id/upButton" />
+
+    <Button
+        android:id="@+id/upButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="50dp"
+        android:background="@android:color/black"
+        android:gravity="bottom"
+        android:text="u"
+        app:layout_constraintBottom_toTopOf="@+id/downButton"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/downButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/black"
+        android:gravity="bottom"
+        android:text="d"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/leftButton" />
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.434"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
